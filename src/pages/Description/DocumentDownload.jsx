@@ -2,12 +2,12 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import './media-desc.css'
 
-const DocumentDownload = ({product}) => {
+const DocumentDownload = ({ product }) => {
 
 	return (
 
 		<>
-	
+
 			<div className="w3eden mt-4">
 				<div className="link-template-default border-dark card mb-2">
 					<div className="card-body">
@@ -31,7 +31,8 @@ const DocumentDownload = ({product}) => {
 							<div className="ml-3">
 								<a
 									className="btn btn-success btn-lg"
-									href={product.documentLink}
+									href=
+									{`https://drive.google.com/file/d/${product.documentLink}/view?usp=drive_link`}
 									target='_blank'
 									rel="noreferrer"
 								>
@@ -47,7 +48,7 @@ const DocumentDownload = ({product}) => {
 
 	);
 
-	
+
 
 
 }

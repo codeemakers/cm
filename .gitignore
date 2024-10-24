@@ -13,6 +13,7 @@
 
 # Secret
 .env
+.todo.txt
 
 # misc
 .DS_Store

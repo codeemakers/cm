@@ -29,21 +29,16 @@ Project Description Comprises - [ Abstarct, Existing System, Proposed System, Ha
 
 List of Projects [ Video and Document ]
 
-1.  Online Pet Store - Done
+15. Online Expense Tracker Website
+6.  Online Art Store
 2.  Pet Store App
 3.  Coloration App
-4.  Online Interior Website
-5.  Photographer Portfolio Website
-6.  Online Art Store
-7.  Onroad Breakdown Assistant Website
-8.  Online Exam System
 9.  Women Safety SOS App
 10. Ecommerce App
 11. College Bus Tracking App
 12. Voice Assistant App
 13. Trip Planner App
 14. Agriculture Community App
-15. Online Expense Tracker Website
 16. Expense Tracker App
 17. Service Booking App
 18. Object Detector App
