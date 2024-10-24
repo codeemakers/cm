@@ -8,8 +8,8 @@ ReactGA.initialize(TRACKING_ID);
 
 function App() {
   return <>
-    {/* <Layout /> */}
-    <Maintenance />
+    <Layout />
+    {/* <Maintenance /> */}
   </>;
 }
 
