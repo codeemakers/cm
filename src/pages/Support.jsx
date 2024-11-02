@@ -31,25 +31,25 @@ const Support = () => {
 
 							<div className=" ">
 								<h3 className="text-transform-none ls0">1.	When will I get the project delivery link after payment?</h3>
-								<p>You will get <b>Instant Download</b>. We will do the configuration and demo on <b>Mon - Fri - 9:30AM to 6:00PM IST</b> and Sat(Min Support)</p>
+								<p>You will get <b>Instant Link</b>. We will do the configuration and demo on <b>Mon - Fri - 9:30AM to 6:00PM IST</b> and Saturday (Min Support)</p>
 							</div>
 
 							<div className=" ">
 								<h3 className="text-transform-none ls0">2.	How I get delivery and demo?</h3>
-								<p>We will connect you through Anydesk software with Google Meet demo session.</p>
+								<p>We will connect you through Anydesk software as well as with Google Meet demo session.</p>
 							</div>
 
 							<div className=" ">
 								<h3 className="text-transform-none ls0">3.	What does project purchase include?</h3>
-								<p>1. Complete source code
-									2. Installation &amp; configuration
-									3. Project explanation &amp; demo
-									4. Support till project completion</p>
+								<p>1. Complete source code</p>
+								<p>2. Installation &amp; configuration </p>
+								<p>3. Project explanation &amp; demo </p>
+								<p>4. Support till project completion</p>
 							</div>
 
 							<div className=" ">
 								<h3 className="text-transform-none ls0">4.	How can I make the Payment?</h3>
-								<p>Payment Options: 
+								<p>Payment Options:
 									• Debit Card
 									• Credit Card
 									• Net Banking
@@ -83,7 +83,7 @@ const Support = () => {
 
 							<div className=" ">
 								<h3 className="text-transform-none ls0">7.	Can I edit the code by myself?</h3>
-								<p>Yes, you can do with change management video tutorials. But functionality changes are at your own risk</p>
+								<p>Yes, you can do the functionality changes with your own risk.</p>
 							</div>
 
 
@@ -99,18 +99,24 @@ const Support = () => {
 
 							<div className=" ">
 								<h3 className="text-transform-none ls0">10.	Can I get the Full Project Report / Documentation?</h3>
-								<p>Yes. You will get the well documented report Check Here
-									<a target="_blank" rel="noreferrer" href="https://codeshoppy.com/Sample%20Full%20Document.pdf">Sample Report</a>  </p>
+								<p>Yes. You will get the well IEEE formatted documented report. Check here for a
+									<span>
+										<a className='sample-report' href='https://drive.google.com/file/d/1VipRcOg9r8QiqPFlYb0EtVy76T891hYc/view?usp=sharing' rel="noreferrer" target="_blank" >
+											Sample Report
+										</a>
+									</span>
+								</p>
 							</div>
 
 							<div className=" ">
 								<h3 className="text-transform-none ls0">11. What should I do if there are any issues after the project delivery?</h3>
-								<p>You can contact our support team if there are any issues.Tech Support: {process.env.REACT_APP_NUMBER}  Whatsapp Now</p>
+								<p>You can contact our support team if there are any issues.</p>
+								<p>Tech Support: {process.env.REACT_APP_NUMBER}</p>
 							</div>
 
 
 							<div className=" ">
-								<h3 className="text-transform-none ls0">12.How to buy the project?</h3>
+								<h3 className="text-transform-none ls0">12. How to buy the project?</h3>
 								<p>You can buy from whatsapp through any of the online payment method available</p>
 							</div>
 

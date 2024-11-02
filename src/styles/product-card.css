@@ -59,6 +59,7 @@
 	}
 	.product__info h3 a{
 		font-size: 1.4rem;
+		line-height: 30px;
 	}
 	.product__card-bottom span i{
 		font-size: 1.8rem;

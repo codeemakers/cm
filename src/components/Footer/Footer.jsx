@@ -25,7 +25,7 @@ const Footer = () => {
 
 				<Col lg='3' md='3' className='mb-2'>
 					<div className="footer__quick-links">
-						<h4 className='quick__links-title'>About Us</h4>
+						<h4 className='quick__links-title'>Important Links</h4>
 						<ListGroup className='mb-3'>
 							<ListGroupItem className='ps-0 border-0'>
 								<Link to='/terms-conditions'>Terms & Conditions</Link>

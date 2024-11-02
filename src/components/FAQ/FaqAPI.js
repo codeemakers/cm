@@ -38,7 +38,7 @@ export const set2 = [
 	{
 		id: 2,
 		ques: '7. How to buy the project?',
-		ans: 'Buy from official link Code Shoppy through any of the online payment method available'
+		ans: 'Buy from official link Code Makers through any of the online payment method available'
 	},
 	{
 		id: 3,

@@ -28,9 +28,27 @@ th {
 
 .policy-section h6,
 h5 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: justify;
   line-height: 180%;
+}
+
+.policy-section .policy__sub__title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+ol.sub-heading  {
+  list-style-type: upper-alpha;
+}
+span {
+  color: var(--primary-color);
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 180%;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 576px) {

@@ -11,6 +11,7 @@ import Description from "./Description/Description";
 import products from "../assets/data/products";
 import Reviews from "./Description/WriteReviews";
 import { getRandomProjects } from "../redux/randomProjects";
+import LoadingComponent from '../components/Loading/LoadingComponent';
 
 const ProductDetails = () => {
 
@@ -89,7 +90,7 @@ const ProductDetails = () => {
 				})
 		} catch (error) {
 			console.log(error)
-			setErrorMsg('Network error while fetching the reviews')
+			setErrorMsg('Failed to load the reviews')
 		}
 
 	}
@@ -151,10 +152,13 @@ const ProductDetails = () => {
 							<h1 className="related__title fs-5 mt-0">Project Video</h1>
 							<MediaDesc link={youtubeLink} productName={productName} />
 						</Col>
-
-						<Col lg='12' className="m-content-review">
-							<Reviews count={reviewsCount} error={errorMsg} avgStar={avgStar} />
-						</Col>
+						{
+							reviewsCount > 0 ?
+								<Col lg='12' className="m-content-review">
+									<Reviews count={reviewsCount} error={errorMsg} avgStar={avgStar} />
+								</Col>
+								: <LoadingComponent />
+						}
 
 						{/* Desktop Content */}
 						<Col lg='12' className="tabs">

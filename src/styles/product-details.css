@@ -226,4 +226,9 @@ a {
     font-size: 0.8rem;
   }
 
+  .prod .product__img {
+    margin-top: 40px;
+    width: 100%;
+  }
+
 }

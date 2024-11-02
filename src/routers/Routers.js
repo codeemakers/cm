@@ -4,6 +4,7 @@ import LoadingComponent from '../components/Loading/LoadingComponent';
 import RefundPolicy from '../pages/Policy/RefundPolicy';
 import DeliveryPolicy from '../pages/Policy/DeliveryPolicy';
 import TCPolicy from '../pages/Policy/TcPolicy';
+import PrivacyPolicy from '../pages/Policy/PrivacyPolicy';
 
 const Home = lazy(() => import("../pages/Home"));
 const Shop = lazy(() => import("../pages/Shop"));
@@ -72,6 +73,12 @@ const Routers = () => {
 			<Route path='/terms-conditions' element={
 				<Suspense fallback={<LoadingComponent />}>
 					<TCPolicy />
+				</Suspense>
+			} />
+
+			<Route path='/privacypolicy' element={
+				<Suspense fallback={<LoadingComponent />}>
+					<PrivacyPolicy />
 				</Suspense>
 			} />
 

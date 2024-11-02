@@ -32,7 +32,7 @@ const ShowReviews = () => {
 				})
 		} catch (error) {
 			console.log(error)
-			setErrorMsg('Opps, Unable to fetch Google Reviews')
+			setErrorMsg('Failed to load the google reviews')
 		}
 
 	}
@@ -56,85 +56,86 @@ const ShowReviews = () => {
 	};
 
 	return (
+		<>
+			<div>
+				{
+					<div className='testi-container' >
+						{
 
-		<div>
-			{
-				<div className='testi-container' >
-					{
+							errorMsg === ''
+								?
+								<Swiper
+									slidesPerView={1}
+									spaceBetween={20}
+									autoplay={{
+										delay: 2500,
+										disableOnInteraction: true,
+									}}
+									pagination={{
+										clickable: true,
+									}}
+									modules={[Pagination, Autoplay]}
+									className="mySwiper sectionn testi-container"
+									breakpoints={{
+										640: {
+											slidesPerView: 1,
+											spaceBetween: 20,
+										},
+										768: {
+											slidesPerView: 1,
+											spaceBetween: 20,
+										},
+										1024: {
+											slidesPerView: 2,
+											spaceBetween: 20,
+										},
+									}}
+								>
+									{/* Carousel Starts */}
+									{
+										reviewData?.map((item, i) => {
 
-						errorMsg === ''
-							?
-							<Swiper
-								slidesPerView={1}
-								spaceBetween={20}
-								autoplay={{
-									delay: 2500,
-									disableOnInteraction: true,
-								}}
-								pagination={{
-									clickable: true,
-								}}
-								modules={[Pagination, Autoplay]}
-								className="mySwiper sectionn testi-container"
-								breakpoints={{
-									640: {
-										slidesPerView: 1,
-										spaceBetween: 20,
-									},
-									768: {
-										slidesPerView: 1,
-										spaceBetween: 20,
-									},
-									1024: {
-										slidesPerView: 2,
-										spaceBetween: 20,
-									},
-								}}
-							>
-								{/* Carousel Starts */}
-								{
-									reviewData?.map((item, i) => {
+											if (item[4] === "true") {
 
-										if (item[4] === true) {
-
-											return <SwiperSlide key={i}>
-												<div className="swiper-client-msg">
-													<div>
-														<LongText
-															limit={65}
-															content={item[2]}
-															title={item[1]}
-														/>
+												return <SwiperSlide key={i}>
+													<div className="swiper-client-msg">
+														<div>
+															<LongText
+																limit={65}
+																content={item[2]}
+																title={item[1]}
+															/>
+														</div>
 													</div>
-												</div>
-												<div className="swiper-client-data grid grid-two-column">
-													<div className="client-data-details">
-														<p>{item[1]}</p>
+													<div className="swiper-client-data grid grid-two-column">
+														<div className="client-data-details">
+															<p>{item[1]}</p>
+														</div>
+														<figure className="review__star">
+															<Stars
+																stars={convertWordToNumber(item[3])}
+															/>
+														</figure>
 													</div>
-													<figure className="review__star">
-														<Stars
-															stars={convertWordToNumber(item[3])}
-														/>
-													</figure>
-												</div>
 
-											</SwiperSlide>;
-										}
-										return null;
-									})
-								}
+												</SwiperSlide>;
+											}
+											return null;
+										})
+									}
 
-							</Swiper>
-							:
-							<div className='mt-4'>
-								<div className="alert alert-danger align-items-center justify-content-center">
-									<p className='center fs-5 text-black'>{errorMsg}</p>
+								</Swiper>
+								:
+								<div className='mt-4'>
+									<div className="alert alert-danger align-items-center justify-content-center">
+										<p className='center fs-5 text-black'>{errorMsg}</p>
+									</div>
 								</div>
-							</div>
-					}
-				</div >
-			}
-		</div>
+						}
+					</div >
+				}
+			</div>
+		</>
 	);
 
 }

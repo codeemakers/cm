@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Helmet from '../../components/Helmet/Helmet'
 import CommonSection from '../../components/UI/CommonSection'
 import '../../styles/cart.css'
+import { Link } from 'react-router-dom'
 
 const RefundPolicy = () => {
 
@@ -26,7 +27,11 @@ const RefundPolicy = () => {
 				<h5 className="section__title mt-4">Refund Policy</h5>
 
 				<h6 className='mt-3'>
-					(1) Contractor failed to deliver the Deliverables (2) mentioned above within 3 days (Or)
+					(1) Code Makers fails to deliver the Deliverables (C) mentioned in <span style={{ fontWeight: 'bold' }}>
+						<Link to={'/terms-conditions'} >
+							Terms and Conditions
+						</Link>
+					</span> within 3 days (Or)
 				</h6>
 
 				<h6 className='mt-3'>

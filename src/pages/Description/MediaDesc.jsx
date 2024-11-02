@@ -23,8 +23,8 @@ const MediaDesc = ({ link, productName }) => {
 
 			<iframe
 				data-lazyloaded="1"
-				data-src={link}
-				src={link}
+				data-src={`https://www.youtube.com/embed/${link}?si=KQaQ5s2vm_ffVBfu`}
+				src={`https://www.youtube.com/embed/${link}?si=KQaQ5s2vm_ffVBfu`}
 				title={`${productName}`}
 				width="1200"
 				height="200"
