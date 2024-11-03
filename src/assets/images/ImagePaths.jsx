@@ -12,6 +12,7 @@ import reviewGirl from './review.png'
 import user from './user.png'
 import faq from './faq.png'
 import maintanence from './maintanence.json'
+import cmloader from './loading_logo.gif'
 
 // ================ Project Images ==========================
 import apkColorFinder from '../proj_images/apkColorFinder.png'
@@ -24,6 +25,7 @@ import webPetShop from '../proj_images/webPetShop.png'
 import webPortfolio from '../proj_images/webPortfolio.png'
 import jarvis from '../proj_images/jarvis.png'
 import onRoad from '../proj_images/onRoad.png'
+import objectDetector from '../proj_images/object_detector.jpg'
 
 export {
 	logo,
@@ -40,6 +42,7 @@ export {
 	user,
 	faq,
 	maintanence,
+	cmloader,
 	
 	// ================ Project Images ==========================
 	apkColorFinder,
@@ -52,4 +55,5 @@ export {
 	webPortfolio,
 	jarvis,
 	onRoad,
+	objectDetector,
 };

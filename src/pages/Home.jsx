@@ -13,6 +13,7 @@ import Clock from "../components/UI/Clock";
 import products from '../assets/data/products'
 import CustomProject from "../components/Custom/CustomProject";
 import { getTrendingProjects } from "../redux/randomProjects";
+import LoadingComponent from "../components/Loading/LoadingComponent";
 
 const ShowReviews = lazy(() => import("../components/Reviews/ShowReviews"));
 
@@ -117,7 +118,7 @@ const Home = () => {
         <h2 className="section__title mb-2 pt-4">Our Google Reviews</h2>
         <p className='fs-5 mb-4'>What Students Says</p>
       </center>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingComponent />}>
         <ShowReviews />
       </Suspense>
 

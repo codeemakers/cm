@@ -4,21 +4,22 @@ import {
   webInterior,
   webPetShop,
   webPortfolio,
-  onRoad
+  onRoad,
+  objectDetector,
 } from '../images/ImagePaths'
 
 // ==================== Image Imports ============================
 
 const products = [
 
-  // ================= Online Pet Shop ======================
+  // ================= Online Pet Shop GS11-01 ======================
 
   {
     id: "GS11-01",
     productName: "Online Pet Shop",
     imgUrl: webPetShop,
     category: "PHP",
-    price: 3500,
+    price: 4000,
 
     abstract: 'Online Pet Shop is an web application where the purchase and sale of pets took place. Thus this website provides a platform where the users could buy or sell pets by providing the contact details of the buyers/sellers. Our project also includes a special feature for buying street dogs through the app whereas its maintenance and operation are carried out by different non-government organizations [NGO] through a website. Through this, we desire to contribute something for reducing the count of street dogs in public places. We are building this web application in a way that we create a login for all users. Thus this app makes a perfect choice for the ones who loves pets and seeks variant breeds of them.',
 
@@ -47,14 +48,14 @@ const products = [
     youtubeLink: 'ryHwtdwA84A',
   },
 
-  // ================= Photographer Portfolio Website ======================
+  // ================= Photographer Portfolio Website GS11-02 ======================
 
   {
     id: "GS11-02",
     productName: "Photographer Portfolio Website",
     imgUrl: webPortfolio,
     category: "PHP",
-    price: 3000,
+    price: 3500,
 
     abstract: 'Step into the world of visual storytelling, where the art of photography transforms fleeting moments into timeless memories. My portfolio website is a curated collection of photographs that transcend the ordinary and invite you to see the world through lens. Each image you encounter has a story to tell, an emotion to convey, or a scene to capture. I believe in the power of photography to freeze a single moment in time, preserving its essence and allowing you to relive it whenever you visit my site. Photography to me is a language that speaks without words. It transcends barriers and connects us through the universal language of visuals.',
 
@@ -79,7 +80,7 @@ const products = [
     youtubeLink: '_E3xsYKSZgk',
   },
 
-  // ================= Online Exam System ======================
+  // ================= Online Exam System GS11-03 ======================
 
   {
     id: "GS11-03",
@@ -115,7 +116,7 @@ const products = [
     youtubeLink: 'vLjxjkMGGzs',
   },
 
-  // ================= Interior Design Website ======================
+  // ================= Interior Design Website GS11-04 ======================
 
   {
     id: "GS11-04",
@@ -147,14 +148,14 @@ const products = [
     youtubeLink: 'VD8DMya16yY',
   },
 
-  // ================= Onroad Breakdown Assistant =================
+  // ================= Onroad Breakdown Assistant GS11-05 =================
 
   {
     id: "GS11-05",
     productName: "Onroad Breakdown Assistant",
     imgUrl: onRoad,
     category: "PHP",
-    price: 3500,
+    price: 3000,
 
     abstract: 'All vehicles will cause some issues in the long run due to wear and tear it is uncertain to predict them in advance. So as to tackle this problem I have come up with this project which helps the users in the uncertain situations to find assistance through our website. It is a web based application that was designed to ensure faster and efficiency of user search on the local mechanics nearby. This also give full control to the admins over the data of mechanics contact details, their personal information like name, location etc. to provide more authentic details to its website users',
 
@@ -177,6 +178,34 @@ const products = [
 
     documentLink: '1kNK8W620cbREJWt1dP8O61DzuranP7V5',
     youtubeLink: 'mrq5RWRJHBg',
+  },
+
+  // ================= Object Detector Python App GS11-06 =================
+
+  {
+    id: "GS11-06",
+    productName: "Object Detector Python App",
+    imgUrl: objectDetector,
+    category: "Android",
+    price: 4000,
+
+    abstract: 'The core functionality of the application revolves around utilizing pre-trained machine learning models to detect objects within the input frames. Leveraging the Python programming language, the project focuses on training custom object detection models using state-of-the-art machine learning algorithms and frameworks. The user interface (UI) of the application is designed with Flutter, providing an intuitive and seamless experience for users. The UI incorporates features for accessing the device camera for real-time object detection and selecting images from the device gallery for analysis.',
+
+    objectives: 'Develop a Flutter-based mobile application for real-time object detection through the device camera. Implement object detection functionality for images sourced from the device gallery. Create an intuitive and visually appealing user interface for seamless interaction.',
+
+    swreq: 'Front End: Flutter & Dart\nServer Side: Python',
+
+    proposed: 'Optimised Performance: The application will utilise optimised machine learning models and inference mechanisms to ensure efficient processing and minimal latency. This enhances performance and responsiveness, providing users with a seamless object detection experience. Intuitive User Interface: The user interface will be designed to be intuitive and user friendly, featuring clear controls, visual feedback, and guidance to assist users in performing object detection tasks effectively. ',
+
+    modules: [
+      {
+        desc: 'Camera Access\nGallery Selection',
+        name: 'User'
+      },
+    ],
+
+    documentLink: '1qKrurTqC592uSFX-wT2mbGci5Jzifw8h',
+    youtubeLink: 'Be0vyF0sQSw',
   },
 
 ]
