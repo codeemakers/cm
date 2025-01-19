@@ -26,6 +26,7 @@ import webPortfolio from '../proj_images/webPortfolio.png'
 import jarvis from '../proj_images/jarvis.png'
 import onRoad from '../proj_images/onRoad.png'
 import objectDetector from '../proj_images/object_detector.jpg'
+import womenSOS from '../proj_images/apkPetShop.png'
 
 export {
 	logo,
@@ -43,7 +44,7 @@ export {
 	faq,
 	maintanence,
 	cmloader,
-	
+
 	// ================ Project Images ==========================
 	apkColorFinder,
 	apkPetShop,
@@ -56,4 +57,5 @@ export {
 	jarvis,
 	onRoad,
 	objectDetector,
+	womenSOS,
 };

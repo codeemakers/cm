@@ -6,6 +6,7 @@ import {
   webPortfolio,
   onRoad,
   objectDetector,
+  womenSOS,
 } from '../images/ImagePaths'
 
 // ==================== Image Imports ============================
@@ -206,6 +207,36 @@ const products = [
 
     documentLink: '1qKrurTqC592uSFX-wT2mbGci5Jzifw8h',
     youtubeLink: 'Be0vyF0sQSw',
+  },
+
+  // ================= Women safety SOS App GS11-07 =================
+  {
+    id: "GS11-07",
+    productName: "Women Safety SOS App",
+    imgUrl: womenSOS,
+    category: "Android",
+    price: 5000,
+
+    abstract: "The Child module empowers users by allowing them to save emergency contacts directly from their phone's contact list, ensuring that help is readily accessible. In the event of an emergency, users can send their live location via SMS to their saved SOS contacts. The app also includes features for profile management and a secure chat function that allows users to send photos and locations within the app. Additionally, users have access to a list of emergency contact numbers, which they can call directly from the app, and a section dedicated to news articles focused on women empowerment, providing valuable information and resources.",
+
+    objectives: "Develop a user-friendly mobile application with two modules: Child and Guardian. Enable users (Child) to save SOS contacts from their phone's contact list. Implement live location sharing via SMS for immediate assistance. Provide secure in-app chat functionality for sharing messages, photos, and locations",
+
+    swreq: 'Front End: Flutter & Dart\nBack End: Google Firebase',
+
+    proposed: "Enable users to save emergency contacts and share live location during emergencies. Implement a secure chat feature for communication between users and guardians. Provide access to curated news articles on women empowerment within the app. Allow guardians to monitor their assigned child's activities and communicate securely. Offer immediate connectivity to trusted contacts and emergency resources. Ensure privacy and confidentiality of communication and user data. Empower users with knowledge and resources through curated information. Facilitate monitoring and support from guardians as needed. Design an intuitive interface for easy navigation and accessibility Enhance safety measures with features like live location sharing and SOS alerts.",
+
+    modules: [
+      {
+        desc: 'Save Emergency Contacts\nShare Location\nChat Feature\nAccess to Curated News Articles',
+        name: 'User'
+      },
+      {
+        desc: 'Chat Feature\nReceive Notifications\nMonitor Child Activities',
+        name: 'Gaurdian'
+      },
+    ],
+    documentLink: '1Vm_bXCLeNEJItLU4MIzjxkpVBzxBqst7',
+    youtubeLink: 'Be0vyF0sQSw.',
   },
 
 ]
